@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<link rel="stylesheet" href="bootstrap.min.css">
+<body>
+    <div id="form" style="display: none;">
+    <div class="w-75 mx-auto py-5">
+        <label for="productName" class="mb-2">Product Name :</label>
+        <input type="text" class="form-control mb-3" id="productName">
+   
+        <label for="productPrice" class="mb-2">Product Price :</label>
+        <input type="number" class="form-control mb-3" id="productPrice">
+   
+        <label for="productCategory" class="mb-2">Product Category :</label>
+        <input type="text" class="form-control mb-3" id="productCategory">
+   
+        <label for="productDesc" class="mb-2">Product Descreption :</label>
+        <textarea type="text" class="form-control mb-3" id="productDesc"></textarea>
+   
+        <button id="add" onclick="addProduct()" class="btn btn-outline-primary">Add Product</button>
+        <button id="save" onclick="saveData()"  class="btn btn-outline-primary">Save Changes</button>
+    </div>
+</div>
+<div id="content">
+    <div class="w-75 mx-auto py-3">
+        <table class="table">
+            <thead>
+                <th>Index</th>
+                <th>product Name</th>
+                <th>product Price</th>
+                <th>product Category</th>
+                <th>product Desc</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableRow">
+            </tbody>
+        </table>
+        <button id="addd" onclick="displayForm()"  class="btn btn-outline-primary">Add</button>
+        <!-- <input id="addd" onclick="displayForm()" type="button" id="Submit" value="add"> -->
+     </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
